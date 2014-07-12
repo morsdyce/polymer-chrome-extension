@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>        
+        <!-- bower:css -->
+        <!-- endbower -->
+
+        <!-- build:css styles/main.css -->
+        <link href="styles/main.css" rel="stylesheet">
+        <!-- endbuild -->
+
+        <!-- bower:js -->
+        <!-- endbower -->
+
+        <!-- build:js scripts/popup.js -->
+        <script src="bower_components/platform/platform.js"></script>
+        <script src="bower_components/polymer/polymer.js"></script>
+        <!-- endbuild -->
+
+        <link rel="import" href="bower_components/core-header-panel/core-header-panel.html">
+        <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+        <link rel="import" href="bower_components/paper-tabs/paper-tabs.html">
+    </head>
+    <body unresolved touch-action="auto">
+
+    <core-header-panel>
+        <core-toolbar>
+
+            <paper-tabs id="tabs" valueattr="name" selected="all" self-end>
+                <paper-tab name="all">All</paper-tab>
+                <paper-tab name="favorites">Favorites</paper-tab>
+            </paper-tabs>
+
+        </core-toolbar>
+
+        <div class="container" layout vertical center>
+            Page content
+        </div>
+
+    </core-header-panel>
+    </body>
+</html>
